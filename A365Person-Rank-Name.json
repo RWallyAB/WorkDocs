@@ -1,0 +1,5 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "txtContent": "=substring(@currentField.title,indexOf(@currentField.title,'USARMY')-4,indexOf(@currentField.title,'USARMY')-1)+' '+substring(@currentField.title,0,indexOf(@currentField.title,'USARMY')-5)"
+  }

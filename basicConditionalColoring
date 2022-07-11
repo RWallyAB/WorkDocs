@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/calendar-formatting.schema.json",
+  "additionalEventClass": {
+    "operator": ":",
+    "operands": [
+      {
+        "operator": "<",
+        "operands": [
+          {
+            "operator": "Date()",
+            "operands": [
+              {
+                "operator": "toDateString()",
+                "operands": [
+                  {
+                    "operator": "Date()",
+                    "operands": [
+                      "[$PerfStart]"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "operator": "Date()",
+            "operands": [
+              {
+                "operator": "toDateString()",
+                "operands": [
+                  {
+                    "operator": "Date()",
+                    "operands": [
+                      "@now"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "=if(@isSelected == true, 'sp-css-color-WhiteFont sp-css-backgroundColor-BgBlue' , 'sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont')+' sp-field-fontSizeSmall'",
+      "=if(@isSelected == true, 'sp-css-color-WhiteFont sp-css-backgroundColor-BgGreen' , 'sp-css-backgroundColor-BgMintGreen sp-css-color-MintGreenFont')"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "children": [
+      {
+        "elmType": "span",
+        "style": {
+          "box-sizing": "border-box",
+          "padding": "0px 2px",
+          "overflow": "hidden",
+          "text-overflow": "ellipsis"
+        },
+        "attributes": {
+          "iconName": "Weights"
+        }
+      },
+      {"elmType": "span",
+            "style": {
+          "box-sizing": "border-box",
+          "padding": "0px 2px",
+          "overflow": "hidden",
+          "text-overflow": "overflow"
+        },
+        "txtContent": "[$Deadlift.displayValue]"
+      }
+    ]
+  }
