@@ -1,0 +1,14 @@
+body {
+  background: rgb(70, 65, 65);
+  margin: 0;
+  border: 35px black solid;
+}
+.grid-container{
+  border: 1px white solid;
+
+}
+.grid-item {
+  padding: 10px;
+  background-color: rgb(50, 138, 189);
+  border: 1px white solid;
+}
