@@ -1,0 +1,390 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "debugMode": true,
+  "style": {
+    "font-size": "20px"
+  },
+  "txtContent": "=padStart(replace(substring(@currentField.displayValue, indexOf(@currentField.displayValue,' ')+1,20),':',''),4,'0')",
+  "customCardProps": {
+    "formatter": {
+      "elmType": "div",
+      "style": {
+        "min-width": "100px"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "children": [
+            {
+              "elmType": "div",
+              "style": {
+                "padding": "15px 45px 15px 15px"
+              },
+              "children": [
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "div",
+                      "style": {
+                        "font-size": "18px",
+                        "font-weight": "550",
+                        "text-align": "center",
+                        "margin-bottom": "10px"
+                      },
+                      "txtContent": "Timeline"
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "25px",
+                        "font-weight": "600",
+                        "margin-left": "10px",
+                        "vertical-align": "middle"
+                      },
+                      "txtContent": " ",
+                      "attributes": {
+                        "title": "Form Time",
+                        "iconName": "Group",
+                        "class": "='ms-fontColor-' + if(getDate([$FormTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$FormTime])=='', '','600')",
+                        "vertical-align": "top",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "Form: ",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$FormTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$FormTime])=='', '','600')",
+                        "text-align": "left",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "=if(Number[$FormTime]>0,padStart(replace(substring([$FormTime.displayValue],indexOf([$FormTime.displayValue], ' ')+1, 100),':',''),4,'0'),' ')",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$FormTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "div",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "600",
+                        "text-align": "center"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if([$FormTime] > 0, 'black', 'black')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "border-left-style": "solid",
+                        "border-left-color": "='ms-borderColor-' + if(getDate([$PerfStart])=='','neutralSecondaryAlt','green')",
+                        "text-align": "center",
+                        "margin-left": "21px"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfStart])=='','neutralSecondaryAlt','green')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "30px",
+                        "font-weight": "600",
+                        "margin-left": "9px",
+                        "vertical-align": "middle"
+                      },
+                      "txtContent": " ",
+                      "attributes": {
+                        "title": "Start Time",
+                        "iconName": "PlaySolid",
+                        "class": "='ms-fontColor-' + if(getDate([$PerfStart])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$PerfStart])=='', '','600')",
+                        "vertical-align": "middle",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "Start: ",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfStart])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$PerfStart])=='', '','600')",
+                        "text-align": "right",
+                        "padding-left": "10px"
+                      },
+                      "txtContent": "=if(Number[$PerfStart]>0,padStart(replace(substring([$PerfStart.displayValue],indexOf([$PerfStart.displayValue], ' ')+1, 100),':',''),4,'0'),' ')",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfStart])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "div",
+                      "style": {
+                        "font-size": "10px",
+                        "font-weight": "600",
+                        "text-align": "center"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if([$PerfStart] > 0, 'black', 'black')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "border-left-style": "solid",
+                        "border-left-color": "='ms-borderColor-' + if(getDate([$PerfEnd])=='','neutralSecondaryAlt','green')",
+                        "text-align": "center",
+                        "margin-left": "21px"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfEnd])=='','neutralSecondaryAlt','green')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "25px",
+                        "font-weight": "600",
+                        "margin-left": "10px",
+                        "vertical-align": "middle"
+                      },
+                      "txtContent": " ",
+                      "attributes": {
+                        "title": "End Time",
+                        "iconName": "StopSolid",
+                        "class": "='ms-fontColor-' + if(getDate([$PerfEnd])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$PerfEnd])=='', '','600')",
+                        "vertical-align": "middle",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "End: ",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfEnd])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$PerfEnd])=='', '','600')",
+                        "text-align": "right",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "=if(Number[$PerfEnd]>0,padStart(replace(substring([$PerfEnd.displayValue],indexOf([$PerfEnd.displayValue], ' ')+1, 100),':',''),4,'0'),' ')",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfEnd])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "div",
+                      "style": {
+                        "font-size": "10px",
+                        "font-weight": "600",
+                        "text-align": "center"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if([$PerfEnd] > 0, 'black', 'black')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "border-left-style": "solid",
+                        "border-left-color": "='ms-borderColor-' + if(getDate([$PerfEnd])=='','neutralSecondaryAlt','green')",
+                        "text-align": "center",
+                        "margin-left": "21px"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$PerfEnd])=='','neutralSecondaryAlt','green')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "25px",
+                        "font-weight": "600",
+                        "margin-left": "10px",
+                        "vertical-align": "middle"
+                      },
+                      "txtContent": " ",
+                      "attributes": {
+                        "title": "Return Time",
+                        "iconName": "Home",
+                        "class": "='ms-fontColor-' + if(getDate([$ReturnTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$ReturnTime])=='', '','600')",
+                        "vertical-align": "middle",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "Return: ",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$ReturnTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$ReturnTime])=='', '','600')",
+                        "text-align": "right",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "=if(Number[$ReturnTime]>0,padStart(replace(substring([$ReturnTime.displayValue],indexOf([$ReturnTime.displayValue], ' ')+1, 100),':',''),4,'0'),' ')",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$ReturnTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "div",
+                      "style": {
+                        "font-size": "10px",
+                        "font-weight": "600",
+                        "text-align": "center"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if([$ReturnTime] > 0, 'black', 'black')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "border-left-style": "solid",
+                        "border-left-color": "='ms-borderColor-' + if(getDate([$ReturnTime])=='','neutralSecondaryAlt','green')",
+                        "text-align": "center",
+                        "margin-left": "21px"
+                      },
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$ReturnTime])=='','neutralSecondaryAlt','green')"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elmType": "div",
+                  "children": [
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "25px",
+                        "font-weight": "600",
+                        "margin-left": "10px",
+                        "vertical-align": "middle"
+                      },
+                      "txtContent": " ",
+                      "attributes": {
+                        "iconName": "Completed",
+                        "class": "='ms-fontColor-' + if(getDate([$EndOfMissionTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$EndOfMissionTime])=='', '','600')",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "MC: ",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$EndOfMissionTime])=='', 'red', 'green')"
+                      }
+                    },
+                    {
+                      "elmType": "span",
+                      "style": {
+                        "font-size": "16px",
+                        "font-weight": "=if(getDate([$EndOfMissionTime])=='', '','600')",
+                        "text-align": "right",
+                        "padding-left": "9px"
+                      },
+                      "txtContent": "=if(Number[$EndOfMissionTime]>0,padStart(replace(substring([$EndOfMissionTime.displayValue],indexOf([$EndOfMissionTime.displayValue], ' ')+1, 100),':',''),4,'0'),' ')",
+                      "attributes": {
+                        "class": "='ms-fontColor-' + if(getDate([$EndOfMissionTime])=='', 'red', 'green')"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "openOnEvent": "hover",
+    "directionalHint": "bottomCenter",
+    "isBeakVisible": true
+  }
+}
