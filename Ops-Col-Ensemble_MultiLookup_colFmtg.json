@@ -1,0 +1,16 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-direction": "column",
+      "justify-content": "space-around"
+      },
+    "children": [
+      {
+        "forEach": "mpt in @currentField",
+        "elmType": "div",
+        "txtContent": "[$mpt.lookupValue]"
+      }
+    ]
+  }

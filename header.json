@@ -1,0 +1,66 @@
+{
+    "elmType": "div",
+    "attributes": {
+        "class": "ms-borderColor-neutralTertiary"
+    },
+    "style": {
+        "width": "99%",
+        "border-top-width": "0px",
+        "border-bottom-width": "1px",
+        "border-left-width": "0px",
+        "border-right-width": "0px",
+        "border-style": "solid",
+        "margin-bottom": "16px"
+    },
+    "children": [
+        {
+            "elmType": "div",
+            "attributes": {
+                "class": "ms-fontColor-neutralSecondary ms-fontWeight-bold ms-fontSize-24"
+            },
+            "style": {
+                "box-sizing": "border-box",
+                "width": "100%",
+                "text-align": "left",
+                "padding": "21px 12px",
+                "overflow": "hidden"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "txtContent": "=toLocaleDateString([$PerfStart])"
+                },
+                {
+                    "elmType": "div",
+                    "txtContent": "=[$Title]"
+                },
+                {
+                    "elmType": "div",
+                    "txtContent": "[$Created]"
+                }
+            ]
+        },
+        {
+            "elmType": "div",
+            "attributes": {
+                "class": "ms-fontColor-neutralSecondary ms-fontWeight-bold ms-fontSize-24"
+            },
+            "style": {
+                "box-sizing": "border-box",
+                "width": "100%",
+                "text-align": "right",
+                "padding": "21px 12px",
+                "overflow": "hidden"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "style": {
+                        "color": "=if([$DueDate] <= @now, '#ff0000', '')"
+                    },
+                    "txtContent": "=if([$EventType]=='' ,'NO EVENT TYPE SELECTED',[$EventType])"
+                }
+            ]
+        }
+    ]
+}

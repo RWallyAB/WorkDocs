@@ -1,0 +1,73 @@
+{
+    "sections": [
+        {
+            "fields": [
+                "Lock"
+            ]
+        },
+        {
+            "displayname": "Event Details",
+            "fields": [
+                "Title",
+                "PerfStart",
+                "PerfEnd",
+                "Location",
+                "Status",
+                "Ensemble",
+                "OpsRep",
+                "EventType"
+            ]
+        },
+        {
+            "displayname": "Point of Contact",
+            "fields": [
+                "PointOfContact",
+                "POCPhone",
+                "POC Email"
+            ]
+        },
+        {
+            "displayname": "Support Requirements",
+            "fields": [
+                "Vehicles Assigned",
+                "SoundSupport",
+                "VehReq",
+                "Drivers"
+            ]
+        },
+        {
+            "displayname": "Timeline",
+            "fields": [
+                "FormTime",
+                "BHDepartureTime",
+                "OnSiteArrivalTime",
+                "UnloadTime",
+                "SetupTime",
+                "SoundCheckTime",
+                "TearDownTime",
+                "LoadoutTime",
+                "PostMissionDepartureTime",
+                "ReturnTime",
+                "EndOfMissionTime"
+            ]
+        },
+        {
+            "displayname": "",
+            "fields": [
+                "Audience Count",
+                "FoS",
+                "Notes",
+                "Drum Major",
+                "ViewColumn",
+                "AAR Comments",
+                "updateJobSheetButton",
+                "Start",
+                "End",
+                "JobSheetUpdated",
+                "CompDay",
+                "GetCompDay",
+                "RecComp"
+            ]
+        }
+    ]
+}
