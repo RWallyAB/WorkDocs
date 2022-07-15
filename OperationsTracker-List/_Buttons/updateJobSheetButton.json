@@ -1,0 +1,13 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "button",
+    "txtContent": "Press this button",
+    "customRowAction": {
+      "action": "executeFlow",
+      "actionParams": "{\"id\": \"78c6afcd-5668-484d-bf7c-36b88addb940\"}"
+    },
+    "style": {
+      "background-color": "#460302",
+      "color": "#ffffff"
+    }
+  }

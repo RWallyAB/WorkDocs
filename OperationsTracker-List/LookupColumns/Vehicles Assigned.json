@@ -1,0 +1,469 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "style": {
+      "flex-wrap": "wrap",
+      "display": "flex"
+    },
+    "children": [
+      {
+        "forEach": "__INTERNAL__ in @currentField",
+        "elmType": "div",
+        "style": {
+          "box-sizing": "border-box",
+          "padding": "4px 8px 5px 8px",
+          "display": "flex",
+          "border-radius": "16px",
+          "height": "24px",
+          "align-items": "center",
+          "white-space": "nowrap",
+          "overflow": "hidden",
+          "margin": "4px 4px 4px 4px"
+        },
+        "attributes": {
+          "class": {
+            "operator": ":",
+            "operands": [
+              {
+                "operator": "==",
+                "operands": [
+                  "[$__INTERNAL__]",
+                  "Bus (C201)"
+                ]
+              },
+              "sp-css-backgroundColor-BgCornflowerBlue",
+              {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$__INTERNAL__]",
+                      "Bus (C205)"
+                    ]
+                  },
+                  "sp-css-backgroundColor-BgMintGreen",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$__INTERNAL__]",
+                          "Box Truck (H205)"
+                        ]
+                      },
+                      "sp-css-backgroundColor-BgGold",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$__INTERNAL__]",
+                              "Duty Van (H155)"
+                            ]
+                          },
+                          "sp-css-backgroundColor-BgCoral",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$__INTERNAL__]",
+                                  "Duty Van (H501)"
+                                ]
+                              },
+                              "sp-css-backgroundColor-BgDustRose",
+                              {
+                                "operator": ":",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "[$__INTERNAL__]",
+                                      "POV"
+                                    ]
+                                  },
+                                  "sp-css-backgroundColor-BgCyan",
+                                  {
+                                    "operator": ":",
+                                    "operands": [
+                                      {
+                                        "operator": "==",
+                                        "operands": [
+                                          "[$__INTERNAL__]",
+                                          "Under Review"
+                                        ]
+                                      },
+                                      "sp-css-backgroundColor-BgOrange sp-css-borderColor-WhiteFont",
+                                      {
+                                        "operator": ":",
+                                        "operands": [
+                                          {
+                                            "operator": "==",
+                                            "operands": [
+                                              "[$__INTERNAL__]",
+                                              "N/A"
+                                            ]
+                                          },
+                                          "sp-css-backgroundColor-BgLightGray sp-css-borderColor-LightGrayFont",
+                                          "sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "children": [
+          {
+            "elmType": "span",
+            "style": {
+              "line-height": "16px",
+              "height": "14px"
+            },
+            "attributes": {
+              "iconName": {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$__INTERNAL__]",
+                      "Bus (C201)"
+                    ]
+                  },
+                  "",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$__INTERNAL__]",
+                          "Bus (C205)"
+                        ]
+                      },
+                      "",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$__INTERNAL__]",
+                              "Box Truck (H205)"
+                            ]
+                          },
+                          "",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$__INTERNAL__]",
+                                  "Duty Van (H155)"
+                                ]
+                              },
+                              "",
+                              {
+                                "operator": ":",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "[$__INTERNAL__]",
+                                      "Duty Van (H501)"
+                                    ]
+                                  },
+                                  "",
+                                  {
+                                    "operator": ":",
+                                    "operands": [
+                                      {
+                                        "operator": "==",
+                                        "operands": [
+                                          "[$__INTERNAL__]",
+                                          "POV"
+                                        ]
+                                      },
+                                      "",
+                                      {
+                                        "operator": ":",
+                                        "operands": [
+                                          {
+                                            "operator": "==",
+                                            "operands": [
+                                              "[$__INTERNAL__]",
+                                              "Under Review"
+                                            ]
+                                          },
+                                          "",
+                                          {
+                                            "operator": ":",
+                                            "operands": [
+                                              {
+                                                "operator": "==",
+                                                "operands": [
+                                                  "[$__INTERNAL__]",
+                                                  "N/A"
+                                                ]
+                                              },
+                                              "",
+                                              ""
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "class": {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$__INTERNAL__]",
+                      "Bus (C201)"
+                    ]
+                  },
+                  "",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$__INTERNAL__]",
+                          "Bus (C205)"
+                        ]
+                      },
+                      "",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$__INTERNAL__]",
+                              "Box Truck (H205)"
+                            ]
+                          },
+                          "",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$__INTERNAL__]",
+                                  "Duty Van (H155)"
+                                ]
+                              },
+                              "",
+                              {
+                                "operator": ":",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "[$__INTERNAL__]",
+                                      "Duty Van (H501)"
+                                    ]
+                                  },
+                                  "",
+                                  {
+                                    "operator": ":",
+                                    "operands": [
+                                      {
+                                        "operator": "==",
+                                        "operands": [
+                                          "[$__INTERNAL__]",
+                                          "POV"
+                                        ]
+                                      },
+                                      "",
+                                      {
+                                        "operator": ":",
+                                        "operands": [
+                                          {
+                                            "operator": "==",
+                                            "operands": [
+                                              "[$__INTERNAL__]",
+                                              "Under Review"
+                                            ]
+                                          },
+                                          "sp-css-color-WhiteFont",
+                                          {
+                                            "operator": ":",
+                                            "operands": [
+                                              {
+                                                "operator": "==",
+                                                "operands": [
+                                                  "[$__INTERNAL__]",
+                                                  "N/A"
+                                                ]
+                                              },
+                                              "sp-css-color-LightGrayFont",
+                                              ""
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "elmType": "span",
+            "style": {
+              "overflow": "hidden",
+              "text-overflow": "ellipsis",
+              "padding": "0 3px"
+            },
+            "txtContent": "[$__INTERNAL__]",
+            "attributes": {
+              "class": {
+                "operator": ":",
+                "operands": [
+                  {
+                    "operator": "==",
+                    "operands": [
+                      "[$__INTERNAL__]",
+                      "Bus (C201)"
+                    ]
+                  },
+                  "sp-css-color-CornflowerBlueFont",
+                  {
+                    "operator": ":",
+                    "operands": [
+                      {
+                        "operator": "==",
+                        "operands": [
+                          "[$__INTERNAL__]",
+                          "Bus (C205)"
+                        ]
+                      },
+                      "sp-css-color-MintGreenFont",
+                      {
+                        "operator": ":",
+                        "operands": [
+                          {
+                            "operator": "==",
+                            "operands": [
+                              "[$__INTERNAL__]",
+                              "Box Truck (H205)"
+                            ]
+                          },
+                          "sp-css-color-GoldFont",
+                          {
+                            "operator": ":",
+                            "operands": [
+                              {
+                                "operator": "==",
+                                "operands": [
+                                  "[$__INTERNAL__]",
+                                  "Duty Van (H155)"
+                                ]
+                              },
+                              "sp-css-color-CoralFont",
+                              {
+                                "operator": ":",
+                                "operands": [
+                                  {
+                                    "operator": "==",
+                                    "operands": [
+                                      "[$__INTERNAL__]",
+                                      "Duty Van (H501)"
+                                    ]
+                                  },
+                                  "sp-css-color-DustRoseFont",
+                                  {
+                                    "operator": ":",
+                                    "operands": [
+                                      {
+                                        "operator": "==",
+                                        "operands": [
+                                          "[$__INTERNAL__]",
+                                          "POV"
+                                        ]
+                                      },
+                                      "sp-css-color-CyanFont",
+                                      {
+                                        "operator": ":",
+                                        "operands": [
+                                          {
+                                            "operator": "==",
+                                            "operands": [
+                                              "[$__INTERNAL__]",
+                                              "Under Review"
+                                            ]
+                                          },
+                                          "sp-field-fontSizeSmall sp-css-color-WhiteFont",
+                                          {
+                                            "operator": ":",
+                                            "operands": [
+                                              {
+                                                "operator": "==",
+                                                "operands": [
+                                                  "[$__INTERNAL__]",
+                                                  "N/A"
+                                                ]
+                                              },
+                                              "sp-field-fontSizeSmall sp-css-color-LightGrayFont",
+                                              ""
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }

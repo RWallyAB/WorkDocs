@@ -15,19 +15,6 @@
     "children": [
         {
             "elmType": "div",
-            "style": {
-                "display": "flex",
-                "box-sizing": "border-box",
-                "align-items": "center"
-            },
-            "attributes": {
-                "iconName": "Contact",
-                "class": "ms-fontSize-42 ms-fontWeight-regular ms-fontColor-themePrimary",
-                "title": "Details"
-            }
-        },
-        {
-            "elmType": "div",
             "attributes": {
                 "class": "ms-fontColor-neutralSecondary ms-fontWeight-bold ms-fontSize-24"
             },
@@ -41,20 +28,37 @@
             "children": [
                 {
                     "elmType": "div",
-                    "txtContent": "=substring([$Rank],indexOf([$Rank],';')+2,20)"
+                    "txtContent": "=toLocaleDateString([$PerfStart])"
                 },
-                { 
+                {
                     "elmType": "div",
-                "children": [
-                    {
-                      "forEach": "itemIterator in [$Billet]",
-                      "elmType": "div",
-                      "txtContent": "[$itemIterator.lookupValue]",
-                      "style": {
-                        "padding-bottom": "1px"
-                      }
-                    }
-                  ]
+                    "txtContent": "=[$Title]"
+                },
+                {
+                    "elmType": "div",
+                    "txtContent": "[$Created]"
+                }
+            ]
+        },
+        {
+            "elmType": "div",
+            "attributes": {
+                "class": "ms-fontColor-neutralSecondary ms-fontWeight-bold ms-fontSize-24"
+            },
+            "style": {
+                "box-sizing": "border-box",
+                "width": "100%",
+                "text-align": "right",
+                "padding": "21px 12px",
+                "overflow": "hidden"
+            },
+            "children": [
+                {
+                    "elmType": "div",
+                    "style": {
+                        "color": "=if([$DueDate] <= @now, '#ff0000', '')"
+                    },
+                    "txtContent": "=if([$EventType]=='' ,'NO EVENT TYPE SELECTED',[$EventType])"
                 }
             ]
         }
