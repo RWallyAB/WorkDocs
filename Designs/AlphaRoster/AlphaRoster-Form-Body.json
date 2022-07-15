@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "displayname": "Personal Data",
+      "fields": ["FirstName", "LastName", "Grade"]
+    },
+    {
+      "displayname": "Family",
+      "fields": [
+        "Married",
+        "Children"
+    ]
+    },
+    {
+      "displayname": "Important Dates",
+      "fields": ["ReportDate"]
+    },
+    {
+        "displayname": "Training Status",
+        "fields": ["CyberAwarenessChallenge"]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "style": {
+        "display": "flex",
+        "flex-direction": "column",
+        "justify-content": "center",
+        "align-items": "center",
+        "background-color": "yellow"
+    },
+    "children": [
+        {
+            "elmType": "div",
+            "children": [
+                {
+                    "elmType": "div",
+                    "txtContent": "1st Row"
+                },
+                {
+                    "elmType": "div",
+                    "txtContent": "2nd Row"
+                },
+                {
+                    "elmType": "div",
+                    "txtContent": "3rd Row"
+                }
+            ]
+        },
+        {
+            "elmType": "div",
+            "txtContent": "2nd Row"
+        },
+        {
+            "elmType": "div",
+            "txtContent": "3rd Row"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "ValType": "List",
+    "Description": "If Children is true, len([$ChildrenNames]>1",
+    "Formula": "=If([$Children"
+}
